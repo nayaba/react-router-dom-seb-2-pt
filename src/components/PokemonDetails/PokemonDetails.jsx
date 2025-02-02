@@ -8,17 +8,15 @@ const PokemonDetails = (props) => {
         poke._id === Number(pokemonId)
     ))
 
-    console.log(singlePokemon)
-
     return (
         <>
             <h2>Pokemon Details</h2>
-            <h3>{pokemonId}</h3>
+            <h3>{singlePokemon.name}</h3>
                 <dl>
                     <dt>Weight:</dt>
-                    <dd></dd>
+                    <dd>{singlePokemon.weight}</dd>
                     <dt>Height:</dt>
-                    <dd></dd>
+                    <dd>{singlePokemon.height}</dd>
                 </dl>
         </>
     )

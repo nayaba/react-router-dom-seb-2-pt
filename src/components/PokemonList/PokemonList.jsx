@@ -9,7 +9,6 @@ const PokemonList = props => {
 				{props.pokemon.map(poke => (
 					<li>
 					<Link to={`/pokemon/${poke._id}`}>{poke.name}</Link>	
-				
 					</li>
 				))}
 			</ul>
